@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>QUICK TRAINS LOGIN</title>
+    <link rel="icon" type="image/png" sizes="56x56" href="./Assets/2.png">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    
+</head>
+
+
+<body>
+	
+   	<div class="layer2" id="layer2">
+   		<img src="./Assets/1.jpg" id="redback" class="redback">
+
+		<div class="mainheader" id="mainheader"></div>
+        <div class="mainheader2" id="mainheader2"></div>
+			<a href="index.html"><img src="./Assets/2.png" id="logo" class="logo"></a>
+			<a href="index.html"><img src="./Assets/3.png" id="homebutton" class="homebutton"></a>
+		
+
+		<div class="navcontainer" id="navcontainer">
+            <div class="navigationbar" id="navigationbar">
+              <a  href="index.html">Home</a>
+              <a class="active" href="ticket.html">Ticketing</a>
+              <a href="myqr.html">Get My Qr</a>
+              <a href="package.html">Packages</a>
+              <a href="time.html">Time Tables</a>
+              <a href="myhistory.html">History</a>
+              <a href="help-support.html">Help</a>
+              <a href="about.html">About us</a>
+             
+            </div>
+        </div>
+        <input type="checkbox" id="check">
+    <label for="check">
+      <i class="fas fa-bars" id="btn"></i>
+      <i class="fas fa-times" id="cancel"></i>
+    </label>
+    <div class="sidebar">
+    <header>QUICK TRAINS</header>
+    <ul>
+     <li><a href="index.html"><i class="fa fa-home"></i>Home</a></li>
+     <li><a href="ticket.html"><i class="fa fa-train"></i>Ticketing</a></li>
+     <li><a href="package.html"><i class="fa fa-list-alt"></i>Packages</a></li>
+     <li><a href="time.html"><i class="fas fa-calendar-week"></i>Time tables</a></li>
+     <li><a href="myqr.html"><i class="fas fa-qrcode"></i>Get my Qrs</a></li>
+     <li><a href="myhistory.html"><i class="fas fa-sliders-h"></i>Travel History</a></li>
+     <li><a href="help-support.html"><i class="far fa-question-circle"></i>Help and support</a></li>
+      <li><a href="about.html"><i class="fa fa-id-card"></i>About us</a></li>
+    </ul>
+   </div>
+<button class="s-out" onclick="logout()" style="top: 30px;">Logout</button>
+            
+
+
+
+
+		    <div class="loginform" id="loginform"  >
+
+               
+                <div class="col login" id="login-form" > 
+
+                    
+                    <form>
+                        <p class="formhead2" >Passenger Login</p>
+                        <a href="index.html" ><img src="./Assets/2.png" id="logo" class="msglog" style="left: 5%;top: 20px;"></a>
+
+                        
+                        <div class="form-group">
+                            <br><br>
+                            <input type="text" placeholder="Email/Username"  class="form-input" id="eimp"/>
+                
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <input type="password" placeholder="Password" class="form-input" id="pimp"/>
+
+                        </div>
+                        <br>
+                        <button type="submit" class="btn btn-login" id="loginbtn">Login</button><br>
+                    </form>
+                   <br> 
+                    <p class="formtxt">Need an account?        <button type="button" class="btn btn-signup" id="signup-page" onclick="signupForm()">Sign up</button></p>
+                    
+                </div>
+                
+                <div class="col signup" id="signup-form" >
+
+                   
+                    <form>
+                         <p class="formhead2">Passenger Registration</p>
+                         <br>
+                           <a href="index.html" ><img src="./Assets/2.png" id="logo" class="msglog" style="left: 5%;top:20px;w"></a>
+                        <div class="form-group">
+                            <input type="text" placeholder="Email" class="form-input" id="email">
+                            
+                        </div><br><div class="form-group">
+                                <input type="text" placeholder="Full Name" class="form-input" id="name">
+                        </div><br>
+                        <div class="form-group">
+                                <input type="text" placeholder="Username" class="form-input" id="usrname">
+                        </div><br>
+                        <div class="form-group">
+                            <input type="password" placeholder="Password (At least 6characters)" class="form-input" id="password">
+                            
+                        </div><br>
+                       
+                        <button type="submit" class="btn btn-signup" id="signupbtn">Resister</button><br>
+                    </form>
+                     
+                      <p class="formtxt">Already have an account?       <button type="button" class="btn btn-login" id="login-page" onclick="loginForm()">Log In</button>  </p>
+                      <br>
+
+                    
+                    
+                </div>
+          
+        </div>
+    
+
+		
+
+
+             <img src="./Assets/2.gif" id="loadimg" class="loadimg" >
+			 <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+			<img src="./Assets/4.png" class="lowertrain" id="lowertrain">
+		
+
+   	</div>
+   	
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase.js"></script>
+	<script type="text/javascript" src="./Java Script/login.js"></script>
+	<script type="text/javascript" src="./Java Script/script.js"></script>
+
+</body>
+</html>

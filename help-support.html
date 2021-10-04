@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>QUICK TRAINS HELP</title>
+    <link rel="icon" type="image/png" sizes="56x56" href="./Assets/2.png">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+   
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+
+
+<body>
+
+	
+   	<div class="layer2" id="layer2">
+   		<img src="./Assets/1.jpg" id="redback" class="redback">
+
+		<div class="mainheader" id="mainheader"></div>
+		<div class="mainheader2" id="mainheader2"></div>
+			<a href="index.html"><img src="./Assets/2.png" id="logo" class="logo"></a>
+			<a href="index.html"><img src="./Assets/3.png" id="homebutton" class="homebutton"></a>
+		
+
+		<div class="navcontainer" id="navcontainer">
+			<div class="navigationbar" id="navigationbar">
+			  <a href="index.html">Home</a>
+			  <a href="ticket.html">Ticketing</a>
+			  <a href="myqr.html">Get My Qr</a>
+			  <a href="package.html">Packages</a>
+			  <a href="time.html">Time Tables</a>
+			  <a href="myhistory.html">History</a>
+			  <a  class="active" href="help-support.html">Help</a>
+			  <a href="about.html">About us</a>
+			 
+			</div>
+		</div>
+		<input type="checkbox" id="check">
+    <label for="check">
+      <i class="fas fa-bars" id="btn"></i>
+      <i class="fas fa-times" id="cancel"></i>
+    </label>
+    <div class="sidebar">
+    <header>QUICK TRAINS</header>
+    <ul>
+     <li><a href="index.html"><i class="fa fa-home"></i>Home</a></li>
+     <li><a href="ticket.html"><i class="fa fa-train"></i>Ticketing</a></li>
+     <li><a href="package.html"><i class="fa fa-list-alt"></i>Packages</a></li>
+     <li><a href="time.html"><i class="fas fa-calendar-week"></i>Time tables</a></li>
+     <li><a href="myqr.html"><i class="fas fa-qrcode"></i>Get my Qrs</a></li>
+     <li><a href="myhistory.html"><i class="fas fa-sliders-h"></i>Travel History</a></li>
+     <li><a href="help-support.html"><i class="far fa-question-circle"></i>Help and support</a></li>
+      <li><a href="about.html"><i class="fa fa-id-card"></i>About us</a></li>
+    </ul>
+   </div>
+
+		
+
+    <div class="loginform" id="loginform" style="width:710px;left: 281px;" >
+
+    <div class="col signup" id="signup-form" style="width:627px;">
+    	<p class="formhead2">Quick trains Bot</p>
+    	<a href="index.html" ><img src="./Assets/2.png" id="logo" class="msglog" style="left: 5%;top:20px;w"></a>
+    	<img src="./Assets/1.gif" class="botimg">
+                        
+                        
+          <button class="s-out" onclick="openForm()" style="position: absolute;top: 350px;left: 480px;">Start Chat</button>
+          <div class="reply" id="btrp" style="text-align: justify;">
+          	Bot reply......
+          </div>
+
+						<div class="chat-popup" id="myForm" style="box-shadow: 2px 2px 2px 2px black;">
+						  <form class="form-container">
+						    <h1 style="font-family: Raleway;">Quick Trains</h1>
+						    <a href="index.html"><img src="./Assets/2.png" id="logo" class="msglog" style="width:50px"></a>
+						    <label for="msg" style="font-family: Raleway;"><b>Chatbot</b></label>
+						    <textarea id="j" placeholder="Type message.." name="msg" required class="txtarea" ></textarea>
+
+						    <button type="submit" class="btn"style="box-shadow: 2px 2px 2px 2px black;">Send</button>
+						    <button type="button" class="btn cancel" onclick="closeForm()" style="box-shadow: 2px 2px 2px 2px black;">Close</button>
+						  </form>
+						</div> 
+						                       
+
+     </div></div>
+		
+
+
+
+			<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+			
+		
+
+   	</div>
+
+
+
+
+   	<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase.js"></script>
+	<script type="text/javascript" src="./Java Script/script.js"></script>
+	<script type="text/javascript" src="./Java Script/chatbot.js"></script>
+</body>
+</html>

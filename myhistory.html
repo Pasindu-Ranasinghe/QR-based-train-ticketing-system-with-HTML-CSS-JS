@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>QUICK TRAINS HISTORY</title>
+    <link rel="icon" type="image/png" sizes="56x56" href="./Assets/2.png">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    
+</head>
+
+
+<body >
+	
+   	<div class="layer2" id="layer2">
+   		<img src="./Assets/1.jpg" id="redback" class="redback">
+
+        <div class="mainheader" id="mainheader"></div>
+        <div class="mainheader2" id="mainheader2"></div>
+            <a href="index.html"><img src="./Assets/2.png" id="logo" class="logo"></a>
+            <a href="index.html"><img src="./Assets/3.png" id="homebutton" class="homebutton"></a>
+        
+
+        <div class="navcontainer" id="navcontainer">
+            <div class="navigationbar" id="navigationbar">
+              <a  href="index.html">Home</a>
+              <a href="ticket.html">Ticketing</a>
+              <a href="myqr.html">Get My Qr</a>
+              <a href="package.html">Packages</a>
+              <a href="time.html">Time Tables</a>
+              <a class="active" href="myhistory.html">History</a>
+              <a href="help-support.html">Help</a>
+              <a href="about.html">About us</a>
+             
+            </div>
+        </div>
+        <input type="checkbox" id="check">
+    <label for="check">
+      <i class="fas fa-bars" id="btn"></i>
+      <i class="fas fa-times" id="cancel"></i>
+    </label>
+    <div class="sidebar">
+    <header>QUICK TRAINS</header>
+    <ul>
+     <li><a href="index.html"><i class="fa fa-home"></i>Home</a></li>
+     <li><a href="ticket.html"><i class="fa fa-train"></i>Ticketing</a></li>
+     <li><a href="package.html"><i class="fa fa-list-alt"></i>Packages</a></li>
+     <li><a href="time.html"><i class="fas fa-calendar-week"></i>Time tables</a></li>
+     <li><a href="myqr.html"><i class="fas fa-qrcode"></i>Get my Qrs</a></li>
+     <li><a href="myhistory.html"><i class="fas fa-sliders-h"></i>Travel History</a></li>
+     <li><a href="help-support.html"><i class="far fa-question-circle"></i>Help and support</a></li>
+      <li><a href="about.html"><i class="fa fa-id-card"></i>About us</a></li>
+    </ul>
+   </div>
+
+		
+			
+		
+         
+         
+       
+
+
+
+
+      
+
+        <div class="loginform" id="popup" >
+
+                     <div class="col signup" id="popup2" >
+                        <a href="index.html"><img class="popupclose" src="./Assets/7.png" ></a>
+                        <p class="formhead3" >QUICK TRAIN ALERTS</p>
+
+                        <a href="index.html"><img src="./Assets/2.png" id="logo" class="msglog" style="left: 5%;top: 5%;"></a>
+                        <img src="./Assets/2.png" class="popbackimg" >
+                        <div class="sublyr">
+            
+                        </div>
+                    <form>
+                        <p class="bodytxtppop" id="alerttext"></p>
+
+                        <button type="button" class="s-out" onclick="finfuncc()" style="position: absolute;top: 75%;width: 200px;left: 35%;">Login To My Account</button>
+                    </form>
+                    </div>
+                    </div>
+
+
+        <div class="loginform" id="loginform" style="height: 500px;">
+
+                     <div class="col signup" id="signup-form" style="height: 383px;">
+                    <form >
+                         <p class="formhead2">Passenger History </p>
+                         <a href="package.html" ><img src="./Assets/2.png" id="logo" class="msglog" style="left: 5%;top: 20px;"></a>
+         
+                        <div class="form-group"><br><br><br>
+                            
+                         <p style="color: white;" class="formhed">Select the user</p><br>
+                        <select id="usr" class="form-input" name="Station" >
+                       
+                        <option value="00" class="dpd">Main User</option>
+                        <option value="01" class="dpd">Child-User 01</option>
+                        <option value="02" class="dpd">Child-User 02</option>
+                        <option value="03" class="dpd">Child-User 03</option>
+                        <option value="04" class="dpd">Child-User 04</option>
+                        <option value="05" class="dpd">Child-User 05</option>
+                       
+                      </select>
+
+
+                      </div><br><br>
+
+                       
+                        <button type="submit" class="btn btn-signup" id="signupbtn"><i class="fa fa-eye" aria-hidden="true"></i> &nbsp View the time History</button><br>
+                    </form>
+                    </div>
+                      </div>
+        
+                                 
+                      
+                    <table id="tableid" style="left:10%;right: 10%;width: 80%;">
+                        
+                    <thead>
+                        <tr>
+                            <th>Start</th>
+
+                            <th>End</th>
+                            
+                            <th>Cost(LKR.)</th>
+                            
+                             <th>Start Date/Time</th>
+                            
+                             <th>End Date/Time</th>
+                             
+                               
+
+                             <br><br><br>
+                        </tr>
+                    </thead>
+                        <tbody id="tableData"></tbody>
+                        <button class="s-out" onclick="back()">Back</button>
+                    </table>
+                 <img src="./Assets/2.gif" id="loadimg" class="loadimg" >
+
+
+
+
+			<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+			<img src="./Assets/4.png" class="lowertrain" id="lowertrain">
+		
+
+   	</div>
+
+
+
+
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase.js"></script>
+   	<script type="text/javascript" src="./Java Script/script.js"></script>
+    <script type="text/javascript" src="./Java Script/myhistory.js"></script>
+    
+</body>
+</html>

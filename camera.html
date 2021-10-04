@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Ticketing</title>
+	<link rel="icon" type="image/png" sizes="56x56" href="./Assets/2.png">
+	<link rel="stylesheet" href="./CSS/style.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+
+
+
+
+
+</head>
+<body>
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	
+	<div class="layer2" id="layer2">
+   		<img src="./Assets/1.jpg" id="redback" class="redback">
+
+		<div class="mainheader" id="mainheader"></div>
+		<div class="mainheader2" id="mainheader2"></div>
+			<a href="index.html"><img src="./Assets/2.png" id="logo" class="logo"></a>
+			<a href="index.html"><img src="./Assets/3.png" id="homebutton" class="homebutton"></a>
+		
+
+		<div class="navcontainer" id="navcontainer">
+			<div class="navigationbar" id="navigationbar">
+			  <a href="index.html">Home</a>
+			  <a class="active" href="ticket.html">Ticketing</a>
+			  <a   href="service.html">Services</a>
+			  <a href="package.html">Packages</a>
+			  <a href="time.html">Time Tables</a>
+			  <a href="about.html">About us</a>
+			 
+			</div>
+		</div>
+		
+		<input type="checkbox" id="check">
+    <label for="check">
+      <i class="fas fa-bars" id="btn"></i>
+      <i class="fas fa-times" id="cancel"></i>
+    </label>
+    <div class="sidebar">
+    <header>QUICK TRAINS</header>
+    <ul>
+     <li><a href="index.html"><i class="fa fa-home"></i>Home</a></li>
+     <li><a href="ticket.html"><i class="fa fa-train"></i>Ticketing</a></li>
+     <li><a href="package.html"><i class="fa fa-list-alt"></i>Packages</a></li>
+     <li><a href="time.html"><i class="fas fa-calendar-week"></i>Time tables</a></li>
+     <li><a href="myqr.html"><i class="fas fa-qrcode"></i>Get my Qrs</a></li>
+     <li><a href="myhistory.html"><i class="fas fa-sliders-h"></i>Travel History</a></li>
+     <li><a href="help-support.html"><i class="far fa-question-circle"></i>Help and support</a></li>
+      <li><a href="about.html"><i class="fa fa-id-card"></i>About us</a></li>
+    </ul>
+   </div>
+		<button class="s-out" onclick="logout()" style="top: 30px;">Logout</button>
+
+		<p id="umail" class="showmail" style="top: 90px;"></p>
+
+		<img src="./Assets/6.png" class="coinimg">
+		<p id="bal" class="bal"></p>
+
+		
+				<div class="loginform" id="popup" >
+
+                     <div class="col signup" id="popup2" >
+                     	<a href="index.html"><img class="popupclose" src="./Assets/7.png" ></a>
+                     	<p class="formhead2">QUICK TRAIN ALERTS</p>
+
+                     	<a href="index.html"><img src="./Assets/2.png" id="logo" class="msglog" style="left: 5%;top: 5%;"></a>
+                     	<img src="./Assets/2.png" class="popbackimg" >
+                     	<div class="sublyr">
+            
+                     	</div>
+                    <form>
+                    	<p class="bodytxtppop" id="alerttext"></p>
+
+                    	<button type="button" class="s-out" onclick="finfuncc()" style="position: absolute;top: 75%;width: 200px;left: 35%;">Finish The Trip</button>
+                    </form>
+                    </div>
+                    </div>
+
+
+
+
+
+				<script src="https://rawgit.com/schmich/instascan-builds/master/instascan.min.js"></script>
+
+				<div class="loginform" id="loginform" style="height: 400px;">
+
+    			<div class="col signup" style="height:283px;" >
+				<p class="formhead3">Scan Your Station QR Code</p>
+				<img src="./Assets/2.png" id="logo" class="msglog" style="left: 5%;top: 20px;">
+				<br>
+				<div class="col-sm-12">
+					<video id="preview" class="p-1 border"></video>
+				</div>
+				
+				<div class="btn-group btn-group-toggle mb-5" data-toggle="buttons">
+				  <label class="btn btn-primary active">
+					<input type="radio" name="options" value="1" autocomplete="off" checked> Front Camera
+				  </label>
+				  <label class="btn btn-secondary">
+					<input type="radio" name="options" value="2" autocomplete="off"> Back Camera
+				  </label>
+				</div>
+				</div>
+				</div>
+		
+
+
+
+		
+		
+
+			<img src="./Assets/2.gif" id="loadimg" class="loadimg" >
+			<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+			<img src="./Assets/4.png" class="lowertrain" id="lowertrain">
+		
+
+   	</div>
+
+
+
+
+
+<script type="text/javascript" src="./Java Script/script.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase.js"></script>
+
+<script type="text/javascript" src="./Java Script/camera.js"></script>
+</body>
+</html>

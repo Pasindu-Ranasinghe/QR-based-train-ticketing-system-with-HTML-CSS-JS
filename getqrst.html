@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>QUICK TRAINS QR</title>
+    <link rel="icon" type="image/png" sizes="56x56" href="./Assets/2.png">
+    <link rel="stylesheet" href="./CSS/style2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+
+
+<body >
+	
+   	<div class="layer2" id="layer2">
+   		<img src="./Assets/1.jpg" id="redback" class="redback">
+
+		<div class="mainheader" id="mainheader"></div>
+		<div class="mainheader2" id="mainheader2"></div>
+			<a href="admin-index.html"><img src="./Assets/2.png" id="logo" class="logo"></a>
+			
+		
+   
+         <button class="s-out" onclick="back()" style="position: absolute;top: 20px;left: 22.5%;">Back</button>
+       
+
+		
+     <div class="sidebar" style="left: 0px;">
+    <header style="font-weight: bold;">QUICK TRAINS</header>
+    <ul>
+     <li><a href="select-set-time-table .html"><i class="fas fa-calendar-plus" ></i>Set Time table</a></li>
+     <li><a href="getqrst.html"><i class="fas fa-qrcode"></i>Get Station QR</a></li>
+     <li><a href="addadmin.html"><i class="fa fa-user-plus"></i>Add another admin</a></li>
+     <li><a href="train-chatbot.html"><i  class="fa fa-comments"></i>Train Chatbot</a></li>
+     <li><a href="set-packages.html"><i class="fa fa-plus-square"></i>Add Packages</a></li>
+     <li><a href="set-news.html"><i class="fa fa-bullhorn"></i>Add Announcements</a></li>
+     <li><a href="chid-scan.html"><i class="fa fa-camera-retro"></i>Student Ticketing</a></li>
+    </ul>
+   </div>          
+
+                    <div class="loginform" id="sel" style="height: 250px;">
+
+                     <div class="col signup" id="signup-form" style="height: 113px;">
+                
+                         <p class="formhead">Station QR</p>
+                      
+                        <button type="button" class="btn btn-signup" onclick="load1()"><i  class="fa fa-window-maximize" ></i>   &nbsp         View My Station QR</button><br><br>
+                         <button type="button" class="btn btn-signup" onclick="downloadImage()"><i class="fa fa-download" ></i>  &nbsp  Download My Station QR</button><br><br>
+                       <br>
+            
+                    </div>
+		              </div>
+
+
+
+        <div class="loginform" id="qrd" style="height: 450px;">
+
+            <div class="col signup" id="qrd2" style="height: 313px;">
+                <p class="formhead">QR code</p>
+                <div class="container-fluid"  >
+                    <div class="text-center">
+
+                        
+                        <img src="https://chart.googleapis.com/chart?cht=qr&chl=Hello+World&chs=160x160&chld=L|0" class="qr-code img-thumbnail img-responsive" />
+                    </div>
+
+                    <div class="form-horizontal">
+                            
+                        <div class="form-group">
+                            <div class="col-sm-offset-2 col-sm-10">
+
+                                <button type="button" class="s-out" id="generate" style="left: 30px;top:200px;"><i class="fa fa-eye" ></i>      &nbsp     Preview</button>
+                                <button type="button" class="s-out" id="g" style="left: 17px;top:260px;"><i class="fa fa-search-plus" ></i>  &nbsp       Full Screen</button>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+			<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+			<img src="./Assets/4.png" class="lowertrain" id="lowertrain">
+		
+
+   	</div>
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase.js"></script>
+   	<script type="text/javascript" src="./Java Script/script.js"></script>
+    <script type="text/javascript" src="./Java Script/getqr.js"></script>
+    
+</body>
+</html>

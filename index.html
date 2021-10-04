@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>QUICK TRAINS HOME</title>
+    <link rel="icon" type="image/png" sizes="56x56" href="./Assets/2.png">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+
+
+<body>
+
+	
+   	<div class="layer2" id="layer2">
+
+   		<div class="newsback"> 
+   			
+   			<marquee  direction="left" id="upd" >
+No announcements
+</marquee>
+
+   		</div>
+
+   		
+					
+   		<img src="./Assets/1.jpg" id="redback" class="redback">
+
+		<div class="mainheader" id="mainheader"></div>
+		<div class="mainheader2" id="mainheader2"></div>
+			<a href="index.html"><img src="./Assets/2.png" id="logo" class="logo"></a>
+			<a href="index.html"><img src="./Assets/3.png" id="homebutton" class="homebutton"></a>
+		
+
+		<div class="navcontainer" id="navcontainer">
+			<div class="navigationbar" id="navigationbar">
+			  <a class="active" href="index.html">Home</a>
+			  <a href="ticket.html">Ticketing</a>
+			  <a href="myqr.html">Get My Qr</a>
+			  <a href="package.html">Packages</a>
+			  <a href="time.html">Time Tables</a>
+			  <a href="myhistory.html">History</a>
+			  <a href="help-support.html">Help</a>
+			  <a href="about.html">About us</a>
+			 
+			</div>
+		</div>
+		<input type="checkbox" id="check">
+    <label for="check">
+      <i class="fas fa-bars" id="btn"></i>
+      <i class="fas fa-times" id="cancel"></i>
+    </label>
+    <div class="sidebar">
+    <header>QUICK TRAINS</header>
+    <ul>
+     <li><a href="index.html"><i class="fa fa-home"></i>Home</a></li>
+     <li><a href="ticket.html"><i class="fa fa-train"></i>Ticketing</a></li>
+     <li><a href="package.html"><i class="fa fa-list-alt"></i>Packages</a></li>
+     <li><a href="time.html"><i class="fas fa-calendar-week"></i>Time tables</a></li>
+     <li><a href="myqr.html"><i class="fas fa-qrcode"></i>Get my Qrs</a></li>
+     <li><a href="myhistory.html"><i class="fas fa-sliders-h"></i>Travel History</a></li>
+     <li><a href="help-support.html"><i class="far fa-question-circle"></i>Help and support</a></li>
+      <li><a href="about.html"><i class="fa fa-id-card"></i>About us</a></li>
+    </ul>
+   </div>
+		<button class="s-out" onclick="login()"  style="width: 150px;position: absolute;left: 86%;">Admin Login</button>
+
+
+		<div id="sd">
+		<input type="checkbox" id="check">
+    <label for="check">
+      <i class="fas fa-bars" id="btn"></i>
+      <i class="fas fa-times" id="cancel"></i>
+    </label>
+    <div class="sidebar">
+    <header>QUICK TRAINS</header>
+    <ul>
+     <li><a href="#"><i class="fas fa-qrcode"></i>Dashboard</a></li>
+     <li><a href="#"><i class="fas fa-link"></i>Shortcuts</a></li>
+     <li><a href="#"><i class="fas fa-stream"></i>Overview</a></li>
+     <li><a href="#"><i class="fas fa-calendar-week"></i>Events</a></li>
+     <li><a href="#"><i class="far fa-question-circle"></i>About</a></li>
+     <li><a href="#"><i class="fas fa-sliders-h"></i>Services</a></li>
+     <li><a href="#"><i class="far fa-envelope"></i>Contact</a></li>
+    </ul>
+   </div>
+</div>
+
+
+		
+
+
+			<img src="./Assets/4.png" class="lowertrain" id="lowertrain">	
+			<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+		
+
+   	</div>
+
+
+
+
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase.js"></script>
+	<script type="text/javascript" src="./Java Script/script.js"></script>
+	<script type="text/javascript" src="./Java Script/news.js"></script>
+	<script type="text/javascript">
+		
+	var nv = document.getElementById("navcontainer");
+	var sd = document.getElementById("sd");
+	sd.style.display = "none";
+var m=document.body.clientWidth;
+  if(m<500){
+  	nv.style.display = "none";
+  	sd.style.display = "block";
+  }
+
+  function login(){
+  		
+			 window.location.href="admin-login.html";
+		}
+	</script>
+</body>
+</html>

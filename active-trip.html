@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>QUICK TRAINS TRAVELLING</title>
+    <link rel="icon" type="image/png" sizes="56x56" href="./Assets/2.png">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+
+
+<body>
+	
+	
+	
+   	<div class="layer2" id="layer2">
+   		<img src="./Assets/1.jpg" id="redback" class="redback">
+
+		<div class="mainheader" id="mainheader"></div>
+		<div class="mainheader2" id="mainheader2"></div>
+			<a href="index.html"><img src="./Assets/2.png" id="logo" class="logo"></a>
+			<a href="index.html"><img src="./Assets/3.png" id="homebutton" class="homebutton"></a>
+		
+<button class="s-out" onclick="logout()" style="top: 30px;">Logout</button>
+
+		<p id="umail" class="showmail" style="top: 90px;"></p>
+
+		<img src="./Assets/6.png" class="coinimg">
+		<p id="bal" class="bal"></p>
+		
+			<div class="loginform" id="loginform" style="height: 300px;">
+
+        <div class="col signup" id="signup-form" style="height:183px;" >
+
+		<p class="formhead" style="font-size: 20px;top: 30px;">You have sucessfully scanned the starting.<br>
+			<br> Once you finish the trip, press "End The Trip"<br>
+			<br> You can use your other apps during the trip.<br>Though your are disconnected or logged out,again login and scan at the destination.Your trip will be alanalysed correctly.<br></p>
+			<br><br><br>
+			<button type="button" class="btn btn-signup" id="backtrip" onclick="backForm()" style="position: absolute;top: 70%;left: 50px;">End The Trip</button>
+		
+	     </div>	</div>
+
+
+			<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+			<img src="./Assets/4.png" class="lowertrain" id="lowertrain">
+		
+
+   	</div>
+
+
+
+
+
+   	<script type="text/javascript" src="./Java Script/script.js"></script>
+   	<script src="https://www.gstatic.com/firebasejs/8.7.1/firebase.js"></script>
+   	<script type="text/javascript" src="./Java Script/active-trip.js"></script>
+</body>
+</html>

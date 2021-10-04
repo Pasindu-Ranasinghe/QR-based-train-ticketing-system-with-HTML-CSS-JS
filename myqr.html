@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>QUICK TRAINS QR</title>
+    <link rel="icon" type="image/png" sizes="56x56" href="./Assets/2.png">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+
+
+<body >
+	
+   	<div class="layer2" id="layer2">
+   		<img src="./Assets/1.jpg" id="redback" class="redback">
+
+        <div class="mainheader" id="mainheader"></div>
+        <div class="mainheader2" id="mainheader2"></div>
+            <a href="index.html"><img src="./Assets/2.png" id="logo" class="logo"></a>
+            <a href="index.html"><img src="./Assets/3.png" id="homebutton" class="homebutton"></a>
+        
+
+        <div class="navcontainer" id="navcontainer">
+            <div class="navigationbar" id="navigationbar">
+              <a href="index.html">Home</a>
+              <a href="ticket.html">Ticketing</a>
+              <a  class="active" href="myqr.html">Get My Qr</a>
+              <a href="package.html">Packages</a>
+              <a href="time.html">Time Tables</a>
+              <a href="myhistory.html">History</a>
+              <a href="help-support.html">Help</a>
+              <a href="about.html">About us</a>
+             
+            </div>
+        </div>
+
+        <input type="checkbox" id="check">
+    <label for="check">
+      <i class="fas fa-bars" id="btn"></i>
+      <i class="fas fa-times" id="cancel"></i>
+    </label>
+    <div class="sidebar">
+    <header>QUICK TRAINS</header>
+    <ul>
+     <li><a href="index.html"><i class="fa fa-home"></i>Home</a></li>
+     <li><a href="ticket.html"><i class="fa fa-train"></i>Ticketing</a></li>
+     <li><a href="package.html"><i class="fa fa-list-alt"></i>Packages</a></li>
+     <li><a href="time.html"><i class="fas fa-calendar-week"></i>Time tables</a></li>
+     <li><a href="myqr.html"><i class="fas fa-qrcode"></i>Get my Qrs</a></li>
+     <li><a href="myhistory.html"><i class="fas fa-sliders-h"></i>Travel History</a></li>
+     <li><a href="help-support.html"><i class="far fa-question-circle"></i>Help and support</a></li>
+      <li><a href="about.html"><i class="fa fa-id-card"></i>About us</a></li>
+    </ul>
+   </div>
+
+		
+			
+		
+         
+         
+       
+
+		
+              
+
+                    <div class="loginform" id="sel" style="height: 550px;">
+
+                     <div class="col signup" id="signup-form" style="height: 433px;">
+                
+                         <p class="formhead3">Passenger QR</p>
+                          <a href="index.html" ><img src="./Assets/2.png" id="logo" class="msglog" style="left: 5%;top: 20px;"></a>
+                       <br>
+                       <img src="./Assets/2.png" class="popbackimg" style="width:400px;left: 160px;top: 80px;">
+                        <button type="button" class="btn btn-signup" onclick="load1()" style="position:absolute;left: 150px;">View My Private QR 1</button> 
+                         <button type="button" class="btn btn-signup" onclick="downloadImage1()"style="position:absolute;left: 370px;">Download My Private QR 1</button><br><br>
+                       <br><br>
+                       <button type="button" class="btn btn-signup" onclick="load2()" style="position:absolute;left: 150px;">View My Private QR 2</button> 
+                         <button type="button" class="btn btn-signup" onclick="downloadImage2()"style="position:absolute;left: 370px;">Download My Private QR 2</button><br><br>
+                       <br><br>
+                       <button type="button" class="btn btn-signup" onclick="load3()" style="position:absolute;left: 150px;">View My Private QR 3</button> 
+                         <button type="button" class="btn btn-signup" onclick="downloadImage3()"style="position:absolute;left: 370px;">Download My Private QR 3</button><br><br>
+                       <br><br>
+                       <button type="button" class="btn btn-signup" onclick="load4()" style="position:absolute;left: 150px;">View My Private QR 4</button> 
+                         <button type="button" class="btn btn-signup" onclick="downloadImage4()"style="position:absolute;left: 370px;">Download My Private QR 4</button><br><br>
+                       <br><br>
+                       <button type="button" class="btn btn-signup" onclick="load5()" style="position:absolute;left: 150px;">View My Private QR 5</button> 
+                         <button type="button" class="btn btn-signup" onclick="downloadImage5()"style="position:absolute;left: 370px;">Download My Private QR 5</button><br><br>
+                       <br><br>
+
+            
+                    </div>
+		              </div>
+
+
+
+        <div class="loginform" id="qrd" style="height: 450px;">
+
+            <div class="col signup" id="qrd2" style="height: 333px;">
+                <button class="s-out" onclick="back()" style="top: 30px;left: 620px;">Back</button>
+                <p class="formhead2">QR code</p>
+                 <a href="index.html"><img src="./Assets/2.png" id="logo" class="msglog" style="left: 5%;top: 5%;"></a>
+                <div class="container-fluid"  >
+                    <div class="text-center" >
+
+                        
+                        <img style="position: absolute;left:260px;" src="https://chart.googleapis.com/chart?cht=qr&chl=Hello+World&chs=160x160&chld=L|0" class="qr-code img-thumbnail img-responsive" />
+                    </div>
+
+                    <div class="form-horizontal">
+                            
+                        <div class="form-group">
+                            <div class="col-sm-offset-2 col-sm-10">
+
+                                <button type="button" class="s-out" id="generate" style="left: 290px;top:290px;">Preview</button>
+                                <button type="button" class="s-out" id="g" style="left: 275px;top:350px;">Full Screen</button>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+        <div class="loginform" id="popup" >
+
+                     <div class="col signup" id="popup2" >
+                        <a href="index.html"><img class="popupclose" src="./Assets/7.png" ></a>
+                        <p class="formhead3" >QUICK TRAIN ALERTS</p>
+
+                        <a href="index.html"><img src="./Assets/2.png" id="logo" class="msglog" style="left: 5%;top: 5%;"></a>
+                        <img src="./Assets/2.png" class="popbackimg" >
+                        <div class="sublyr">
+            
+                        </div>
+                    <form>
+                        <p class="bodytxtppop" id="alerttext"></p>
+
+                        <button type="button" class="s-out" onclick="finfuncc()" style="position: absolute;top: 75%;width: 200px;left: 35%;">Login To My Account</button>
+                    </form>
+                    </div>
+                    </div>
+
+
+
+
+			<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+			<img src="./Assets/4.png" class="lowertrain" id="lowertrain">
+		
+
+   	</div>
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase.js"></script>
+   	<script type="text/javascript" src="./Java Script/script.js"></script>
+    <script type="text/javascript" src="./Java Script/myqr.js"></script>
+    
+</body>
+</html>

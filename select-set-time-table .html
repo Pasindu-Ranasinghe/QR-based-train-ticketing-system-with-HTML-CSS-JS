@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>QUICK TRAINS ADMIN-SET TIMETABLE</title>
+    <link rel="icon" type="image/png" sizes="56x56" href="./Assets/2.png">
+    <link rel="stylesheet" href="./CSS/style2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+
+
+<body>
+	
+   	<div class="layer2" id="layer2">
+   		<img src="./Assets/1.jpg" id="redback" class="redback">
+
+		<div class="mainheader" id="mainheader"></div>
+		<div class="mainheader2" id="mainheader2"></div>
+			<a href="admin-index.html"><img src="./Assets/2.png" id="logo" class="logo"></a>
+			
+		
+         <button class="s-out" onclick="logout()">Logout</button>
+         <button class="s-out" onclick="back()" style="position: absolute;top: 20px;left: 22.5%;">Back</button>
+       
+
+		
+     <div class="sidebar" style="left: 0px;">
+    <header style="font-weight: bold;">QUICK TRAINS</header>
+    <ul>
+     <li><a href="select-set-time-table .html"><i class="fas fa-calendar-plus" ></i>Set Time table</a></li>
+     <li><a href="getqrst.html"><i class="fas fa-qrcode"></i>Get Station QR</a></li>
+     <li><a href="addadmin.html"><i class="fa fa-user-plus"></i>Add another admin</a></li>
+     <li><a href="train-chatbot.html"><i  class="fa fa-comments"></i>Train Chatbot</a></li>
+     <li><a href="set-packages.html"><i class="fa fa-plus-square"></i>Add Packages</a></li>
+     <li><a href="set-news.html"><i class="fa fa-bullhorn"></i>Add Announcements</a></li>
+     <li><a href="chid-scan.html"><i class="fa fa-camera-retro"></i>Student Ticketing</a></li>
+    </ul>
+   </div>          
+
+                    <div class="loginform" id="loginform" style="height: 250px;">
+
+                     <div class="col signup" id="signup-form" style="height: 113px;">
+                    <form >
+                         <p class="formhead">Time Table Modification</p>
+                       
+                        <button type="button" class="btn btn-signup" onclick="load1()"><i class="fa fa-plus" aria-hidden="true"></i> &nbsp  Add New Time Slot</button><br><br>
+                        <button type="button" class="btn btn-signup" onclick="load2()"><i class="fa fa-trash" aria-hidden="true"></i>  &nbsp           Delete Time Slot</button><br>
+                    </form>
+                    </div>
+		              </div>
+
+
+
+			<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+			<img src="./Assets/4.png" class="lowertrain" id="lowertrain">
+		
+
+   	</div>
+
+
+
+
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase.js"></script>
+   	<script type="text/javascript" src="./Java Script/script.js"></script>
+    <script type="text/javascript">
+        function load1(){
+             window.location.href="set-time-table.html";
+        }
+        function load2(){
+             window.location.href="set-time-table - delete.html";
+        }
+        function back(){
+            window.location.href="admin-index.html";
+        }
+    </script>
+</body>
+</html>
